@@ -21,10 +21,18 @@ let borderSort = function(arr) {
   for (let i = 0; i < rows; i++) {
     outsideArr.push([]);
   }
-  //honestly i'm stuck here
+  //first row
   console.log(outsideArr);
   for (let i = 0; i < columns; i++) {
     outsideArr[0].push(sortedArr[i]);
+    sortedArr.shift();
+  }
+
+  //the rest of the outside
+  // i equals 1 because we already took care of the first row, we only need to take care of the last index from the last 3 rows/arrays
+  //just seeing how it would work for the first example is
+  for (let i = 1; i < rows; i++) {
+    outsideArr[i].push(sortedArr[i - 1]);
   }
 };
 

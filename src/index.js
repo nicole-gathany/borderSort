@@ -17,17 +17,14 @@ let borderSort = function(arr) {
   // console.log(fullArr);
   console.log(sortedArr);
   let outsideArr = [];
-  let insideArr = [];
 
   for (let i = 0; i < rows; i++) {
-    outsideArr.push(insideArr);
+    outsideArr.push([]);
   }
   //honestly i'm stuck here
   console.log(outsideArr);
   for (let i = 0; i < columns; i++) {
     outsideArr[0].push(sortedArr[i]);
-
-    //outsideArr[i+1].pop()
   }
 };
 

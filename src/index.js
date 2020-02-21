@@ -16,8 +16,19 @@ let borderSort = function(arr) {
   let sortedArr = fullArr.concat().sort((a, b) => a - b);
   // console.log(fullArr);
   console.log(sortedArr);
+  let outsideArr = [];
+  let insideArr = [];
 
-  for (let i = 0; i < columns; i++) {}
+  for (let i = 0; i < rows; i++) {
+    outsideArr.push(insideArr);
+  }
+  //honestly i'm stuck here
+  console.log(outsideArr);
+  for (let i = 0; i < columns; i++) {
+    outsideArr[0].push(sortedArr[i]);
+
+    //outsideArr[i+1].pop()
+  }
 };
 
 borderSort([
@@ -27,6 +38,7 @@ borderSort([
   [-15, 26, 61, -2]
 ]);
 //should be:
+//this output actually doesn't make any sense
 //[[-80,-66,-59,-33],
 //[99,-37,-36,-18],
 // [61,90,82,-15],

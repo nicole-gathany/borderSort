@@ -1,2 +1,0 @@
-# borderSort
-Created with CodeSandbox

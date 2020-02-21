@@ -1,6 +1,6 @@
 let borderSort = function(arr) {
   //two loops because it's a nested array
-  let arr2 = [];
+  let fullArr = [];
   //rows are the number of loops and arrays we need
   let rows = arr.length;
   let columns = arr[0].length;
@@ -8,13 +8,15 @@ let borderSort = function(arr) {
   console.log(columns);
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
-      arr2.push(arr[i][j]);
+      fullArr.push(arr[i][j]);
     }
   }
 
-  let sortedArr = arr2.concat().sort((a, b) => a - b);
-  console.log(arr2);
+  let sortedArr = fullArr.concat().sort((a, b) => a - b);
+  // console.log(fullArr);
   console.log(sortedArr);
+
+  for (let i = 0; i < columns; i++) {}
 };
 
 borderSort([

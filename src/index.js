@@ -3,8 +3,9 @@ let borderSort = function(arr) {
   let arr2 = [];
   //rows are the number of loops and arrays we need
   let rows = arr.length;
+  let columns = arr[0].length;
   console.log(rows);
-
+  console.log(columns);
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr2.push(arr[i][j]);

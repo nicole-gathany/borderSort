@@ -1,6 +1,10 @@
 let borderSort = function(arr) {
   //two loops because it's a nested array
   let arr2 = [];
+  //rows are the number of loops and arrays we need
+  let rows = arr.length;
+  console.log(rows);
+
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
       arr2.push(arr[i][j]);

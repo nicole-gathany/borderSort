@@ -3,6 +3,7 @@ let borderSort = function(arr) {
   let fullArr = [];
   //rows are the number of loops and arrays we need
   let rows = arr.length;
+  //columns are the number of empty arrays i need
   let columns = arr[0].length;
   console.log(rows);
   console.log(columns);

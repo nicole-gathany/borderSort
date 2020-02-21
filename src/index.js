@@ -33,7 +33,13 @@ let borderSort = function(arr) {
   //just seeing how it would work for the first example is
   for (let i = 1; i < rows; i++) {
     outsideArr[i].push(sortedArr[i - 1]);
+    sortedArr.shift();
   }
+
+  //not what i want will think about it some more
+  // for(let i=1; i<rows; i++){
+  //   outsideArr[outsideArr.length-1].unshift(sortedArr[i-1])
+  // }
 };
 
 borderSort([

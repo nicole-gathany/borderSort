@@ -2,8 +2,14 @@ let borderSort = function(arr) {
   //two loops because it's a nested array
   let arr2 = [];
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {}
+    for (let j = 0; j < arr[i].length; j++) {
+      arr2.push(arr[i][j]);
+    }
   }
+
+  let sortedArr = arr2.concat().sort((a, b) => a - b);
+  console.log(arr2);
+  console.log(sortedArr);
 };
 
 borderSort([
@@ -12,5 +18,10 @@ borderSort([
   [-59, -37, 82, -33],
   [-15, 26, 61, -2]
 ]);
+//should be:
+//[[-80,-66,-59,-33],
+//[99,-37,-36,-18],
+// [61,90,82,-15],
+// [26,15,-2,-10]]
 
 borderSort([[9, 4], [6, 8]]);
